@@ -13,17 +13,6 @@ matrix_mul:
     pushq %r15
     pushq %rbx
 
-    bef:
-
-    movq 16(%rbp), %rdi
-    movq 24(%rbp), %rsi
-    movq 32(%rbp), %rdx
-    movq 40(%rbp), %rcx
-    movq 48(%rbp), %r8
-    movq 56(%rbp), %r9
-    
-    aft:
-
     xorq %r10, %r10
 
 outer_loop_i:
